@@ -1,3 +1,9 @@
+# revision 23577
+# category Package
+# catalog-ctan /macros/luatex/latex/luaindex
+# catalog-date 2011-02-21 15:41:42 +0100
+# catalog-license lppl1.3
+# catalog-version 0.1b
 Name:		texlive-luaindex
 Version:	0.1b
 Release:	1
@@ -46,6 +52,7 @@ Lua.
 %doc %{_texmfdistdir}/doc/lualatex/luaindex/luaindex.pdf
 #- source
 %doc %{_texmfdistdir}/source/lualatex/luaindex/luaindex.dtx
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -56,3 +63,5 @@ Lua.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar scripts tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
