@@ -1,12 +1,12 @@
-# revision 23577
+# revision 25882
 # category Package
 # catalog-ctan /macros/luatex/latex/luaindex
-# catalog-date 2011-02-21 15:41:42 +0100
+# catalog-date 2011-08-19 10:28:18 +0200
 # catalog-license lppl1.3
 # catalog-version 0.1b
 Name:		texlive-luaindex
 Version:	0.1b
-Release:	2
+Release:	3
 Summary:	Create index using lualatex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/luatex/latex/luaindex
