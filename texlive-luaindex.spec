@@ -53,3 +53,21 @@ Lua.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar scripts tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Fri Apr 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1b-3
++ Revision: 790649
+- Update to latest release.
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1b-2
++ Revision: 753582
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.1b-1
++ Revision: 718921
+- texlive-luaindex
+- texlive-luaindex
+- texlive-luaindex
+- texlive-luaindex
+
