@@ -6,7 +6,7 @@
 # catalog-version 0.1b
 Name:		texlive-luaindex
 Version:	0.1b
-Release:	3
+Release:	4
 Summary:	Create index using lualatex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/luatex/latex/luaindex
