@@ -1,4 +1,7 @@
 sources:
+  luaindex.doc.r25882.tar.xz: 626ad6c86056b8bc49f6bfa789b61f07773ff66d
   luaindex.doc.tar.xz: 30432ad4c6fb33d9d3c77318bc0df912660949cc
+  luaindex.r25882.tar.xz: 88a3fd6bc0247ff00a7a7b2e76815dba7ceed0fe
+  luaindex.source.r25882.tar.xz: 544539b7fa1d410d51e21864bdd8fc982cc9c4f0
   luaindex.source.tar.xz: 223fbb460bb3f0f3300f671ef843034739502d05
   luaindex.tar.xz: b423d36e7805d23e54b538a49efc8c648f5c6344

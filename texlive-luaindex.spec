@@ -1,19 +1,13 @@
-# revision 25882
-# category Package
-# catalog-ctan /macros/luatex/latex/luaindex
-# catalog-date 2011-08-19 10:28:18 +0200
-# catalog-license lppl1.3
-# catalog-version 0.1b
 Name:		texlive-luaindex
-Version:	0.1b
-Release:	12
+Version:	25882
+Release:	1
 Summary:	Create index using lualatex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/luatex/latex/luaindex
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luaindex.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luaindex.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luaindex.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luaindex.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luaindex.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luaindex.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ Luaindex provides (yet another) index processor, written in
 Lua.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -46,28 +40,11 @@ Lua.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar scripts tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Fri Apr 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1b-3
-+ Revision: 790649
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1b-2
-+ Revision: 753582
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.1b-1
-+ Revision: 718921
-- texlive-luaindex
-- texlive-luaindex
-- texlive-luaindex
-- texlive-luaindex
-
