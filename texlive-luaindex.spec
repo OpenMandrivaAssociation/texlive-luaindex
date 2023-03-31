@@ -1,6 +1,6 @@
 Name:		texlive-luaindex
 Version:	25882
-Release:	1
+Release:	2
 Summary:	Create index using lualatex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/luatex/latex/luaindex
