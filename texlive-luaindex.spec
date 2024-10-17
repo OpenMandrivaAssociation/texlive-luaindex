@@ -3,7 +3,7 @@ Version:	25882
 Release:	2
 Summary:	Create index using lualatex
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/luatex/latex/luaindex
+URL:		https://www.ctan.org/tex-archive/macros/luatex/latex/luaindex
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luaindex.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luaindex.doc.r%{version}.tar.xz
